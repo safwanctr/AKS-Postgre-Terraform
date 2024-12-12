@@ -23,8 +23,8 @@ Before you start, ensure you have the following installed:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/safwanctr/AKS-Postgre-Terraform.git
+cd AKS-Postgre-Terraform
 ```
 
 ### 2. Configure Azure CLI
