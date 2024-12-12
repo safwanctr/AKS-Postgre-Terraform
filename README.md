@@ -1,4 +1,4 @@
-# Dev Environment Infrastructure Setup
+# Infrastructure as Code (IaC) with Terraform and Azure 
 
 This repository contains the Terraform configuration to set up a `dev` environment on Azure, which includes:
 
