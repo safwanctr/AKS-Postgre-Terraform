@@ -1,0 +1,32 @@
+# .terraform directory, which stores modules and provider plugins
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Backup files created by Terraform
+*.tfvars.backup
+
+# Override files for environments
+override.tf
+override.tf.json
+
+# Local variables file (often containing secrets)
+*.tfvars
+
+# .terraform.lock.hcl file, which is used to lock provider versions
+.terraform.lock.hcl
+
+# Crash logs from Terraform operations
+crash.log
+
+# IDE or editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system specific files
+.DS_Store
+Thumbs.db

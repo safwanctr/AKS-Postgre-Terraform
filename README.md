@@ -45,11 +45,11 @@ You will need to configure a few variables for the Terraform configuration. Crea
 ```bash
 # terraform.tfvars
 
-location            = "East US"
+location            = "East US 2"
 resource_group_name = "rg-dev"
-postgresql_admin_user     = "admin"
+postgresql_admin_user     = "your-admin-user"
 postgresql_admin_password = "your-strong-password"
-postgresql_db_name        = "devdb"
+postgresql_db_name        = "your-db-name"
 ghcr_pat            = "your-ghcr-pat"
 github_username     = "your-github-username"
 github_email        = "your-github-email"
@@ -95,16 +95,10 @@ Database Name: devdb
 ```
 These details will be output once the Terraform apply process is complete.
 
-### 8. Deploying Your Application
-Once your infrastructure is ready, your application can be deployed to the AKS cluster. The Kubernetes deployment configuration uses a container from GitHub Container Registry (GHCR). Ensure that the Docker image is built and pushed to GHCR.
 
-To deploy the app, use the following command:
 
-```bash
-kubectl apply -f deployment.yaml
-```
 
-### 9. Accessing Your Application
+### 8. Accessing Your Application
 After the deployment, you can access your application using the external IP assigned by AKS. You can check the service details with the following command:
 
 ```bash
